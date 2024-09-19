@@ -44,12 +44,15 @@
                     <th><?php echo $tarefa; ?></th>
                 </tr>
             <?php endforeach; ?>    
+            <!-- existe outros blocos com a mesma sintaxe if e endif, while e endwhile e for e endfor -->
 
             <!-- Exemplo do código acima usando chaves -->
             <?php foreach ($lista_tarefa as $tarefa) { ?>
+                <!--
                 <tr>
                     <td><?php echo $tarefa; ?></td>
                 </tr>
+                -->
             <?php } ?>
         </table>
     </body>
