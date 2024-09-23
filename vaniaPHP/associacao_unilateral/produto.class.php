@@ -15,19 +15,19 @@
         ){}
 
         public function getNome()
-            { return $this->nome;}
+        { return $this->nome;}
 
         public function getDescricao()
-            { return $this->descricao;}
+        { return $this->descricao;}
 
         public function getPreco()
-            { return $this->preco;}
+        { return $this->preco;}
             
         public function getEstoque()
-            { return $this->estoque;}
+        { return $this->estoque;}
 
-            public function getFornecedor()
-            {return $this->fornecedor;}
+        public function getFornecedor()
+        {return $this->fornecedor;}
         
 
     }

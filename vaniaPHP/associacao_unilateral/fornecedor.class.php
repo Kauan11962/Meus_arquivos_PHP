@@ -1,8 +1,8 @@
 <?php
     class Fornecedor
     {public function __construct(private string $razao_social = "", private string $nome_fantasia = "", private string $cnpj = "",
-         private string $telefone = "", private array $produto = array()){}
-
+        private string $telefone = "", private array $produto = array()){}
+ 
     public function getRazao_social()
         { return $this->razao_social;}
 
