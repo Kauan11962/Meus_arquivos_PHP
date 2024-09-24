@@ -9,7 +9,7 @@
             private string $telefone = "",
             private string $data_de_nascimento = "",
             private string $profissao = "",
-            private Agenda $agenda = new Agenda()
+            private array $agenda = array()
         ){}
 
         public function getNome()

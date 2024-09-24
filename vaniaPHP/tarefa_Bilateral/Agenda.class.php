@@ -4,7 +4,7 @@
     {
         public function __construct(
             private string $ano = "",
-            private Paciente $paciente = null
+            private Paciente $agenda = new Paciente()        
         ){}
 
         public function getAno()
