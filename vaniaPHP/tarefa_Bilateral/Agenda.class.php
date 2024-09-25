@@ -10,9 +10,6 @@
         public function getAno()
         { return $this->ano; } 
         
-        public function setPaciente()
-        { $this->paciente = $paciente; }
-
         public function getPaciente()
         { return $this->paciente; }
     }
