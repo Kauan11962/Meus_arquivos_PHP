@@ -1,0 +1,7 @@
+    para O PHP saber qual usuário é o dono de uma sessão, ele guarda algumas 
+    informações no Cookies do navegador, a informação mais importante fica em um cookie chamado 
+    PHPSESSID, que guarda um código único de indentificação da sessão daquele usuário que está
+    acessando a aplicação PHP.
+    Nós também podemos usar os Cookies para guardar informações que serão mantidas entre as requisições.
+    Para isso, basta usar uma outra super global do PHP chamada $_COOKKIE. Esta super global também é um array,
+    assim como a $_SESSION.
