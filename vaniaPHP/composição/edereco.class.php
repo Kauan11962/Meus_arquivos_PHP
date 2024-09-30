@@ -2,7 +2,7 @@
     class Endereco 
     {
         public function __construct(
-            private string $logradouto = "",
+            private string $logradouro = "",
             private string $numero = "",
             private string $cep = "",
             private $pessoa = null
@@ -15,7 +15,7 @@
 
         public function getLogradouro()
         {
-            return $this->getLogradouro;
+            return $this->logradouro;
         }
 
         public function getNumero()

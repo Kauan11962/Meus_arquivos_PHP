@@ -10,9 +10,20 @@
 
     //pessoa colocar os endereços dela
 
-    $pessoa = new Pessoa(nome: "Ana", logradouro: "7 de setembro", numero: "44", cep: "17444334");
+    $pessoa2 = new Pessoa(nome: "Ana", logradouro: "7 de setembro", numero: "44", cep: "17444334");
 
-    echo "<pre>";
+    /*echo "<pre>";
     var_dump($pessoa);
-    echo "</pre>";
+    echo "</pre>";*/
+
+    echo "Nome: {$pessoa->getNome()}<br>";
+    echo "Logradouro: {$endereco->getLogradouro()}<br>";
+    echo "Numero: {$endereco->getNumero()}<br>";
+    echo "Cep: {$endereco->getCep()}<br>";
+    echo "<br><br>";
+    echo "Nome: {$pessoa2->getNome()}<br>";
+    
+    foreach ($pessoa2->getEndereco() as $endereco) {
+        echo "Endereço: " . $endereco->getLogradouro() . ", " . $endereco->getNumero() . ", CEP: " . $endereco->getCep() . "<br>";
+    }
 ?>

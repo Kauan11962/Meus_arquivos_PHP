@@ -10,14 +10,19 @@
             $this->endereco[] = new Endereco($logradouro, $numero, $cep, $pessoa);
         }
 
+        public function getEndereco()
+        {
+            return $this->endereco;
+        }
+
         public function getNome()
         {
             return $this->nome;
         }
 
-        public function setEdereco($logradouro, $numero, $cep, $pessoa)
+        public function setEndereco($logradouro, $numero, $cep, $pessoa)
         {
-            $this->edereco[] = new Edereco($logradouro, $numero, $cep, $pessoa);
+            $this->edereco[] = new Endereco($logradouro, $numero, $cep, $pessoa);
         }
     }//Fim da classe
 ?>
