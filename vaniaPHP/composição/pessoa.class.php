@@ -22,7 +22,7 @@
 
         public function setEndereco($logradouro, $numero, $cep, $pessoa)
         {
-            $this->edereco[] = new Endereco($logradouro, $numero, $cep, $pessoa);
+            $this->endereco[] = new Endereco($logradouro, $numero, $cep, $pessoa);
         }
     }//Fim da classe
 ?>
