@@ -15,14 +15,13 @@
                 </label>
                 <label>
                     Descrição (Opicional)
-                    <textarea nome='descricao'></textarea>
+                    <textarea name='descricao'></textarea>
                 </label>
                 <label>
                     Prazo (Opicional)
                     <input type='text' name='prazo' />
                 </label>
                 <br>
-                <input type='submit' value='Cadastrar' />
             </fieldset>    
             <fieldset>
                 <legend>Propriedade:</legend>
@@ -34,18 +33,30 @@
                     <input type='radio' name='propriedade' value='alta' />
                     Alta
                 </label>
-            <input type='submit' value='Cadastrar' />
             </fieldset>
+            <label>
+                Tarefa concluida:
+                <input type='checkbox' name='concluida' value='sim' />
+            </label>   
+            <input type='submit' value='Cadastrar' />
         </form>
         <table>
-            <th>
-                <tr>Tarefas</tr>
-            </th>
-            <?php foreach ($listar_tarefas as $tarefas) : ?>
-                <th>
-                    <tr><?php echo $tarefas; ?></tr>
-                </th>
+            <tr>
+                <th>Tarefas</th>
+                <th>Descrição</th>
+                <th>Prazo</th>
+                <th>Propriedade</th>
+                <th>concluida</th>
+            </tr>
+            <?php foreach ($listar_tarefas as $tarefa) : ?>
+                <tr>
+                    <td><?php echo $tarefa['nome'] ?></td>
+                    <td><?php echo $tarefa['descricao'] ?></td>
+                    <td><?php echo $tarefa['prazo'] ?></td>
+                    <td><?php echo $tarefa['propriedade'] ?></td>
+                    <td><?php echo $tarefa['concluida'] ?></td>
+                </tr>
             <?php endforeach ?>
         </table>
-    </doby>
+    </body>
 </html>
