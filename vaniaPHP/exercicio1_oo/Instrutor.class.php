@@ -1,0 +1,26 @@
+<?php
+	class Instrutor extends Pessoa
+	{
+		public function __construct(
+			private string $especialidade = "",
+			string $nome = "",
+			string $cpf = "",
+			int $ddd = 0,
+			string $numero = "",
+			$pessoa = null)
+			{
+				parent:: __construct($nome, $cpf, $ddd, $numero, $pessoa);
+			}
+		
+		public function getEspecialidade()
+		{
+			return $this -> especialidade;
+		}
+				
+		public function setEspecialidade($especialidade)
+		{
+			$this -> especialidade = $especialidade;
+		}
+		
+	}//fim da classe
+?>
